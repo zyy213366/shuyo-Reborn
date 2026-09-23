@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "轻课表"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "课表查看、导入与对比"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "轻课表"
+    }
+  ]
+}

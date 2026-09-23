@@ -1,0 +1,1094 @@
+[!] Warning: Building for device with codesigning disabled. You will have to manually codesign before deploying to device.
+start hap build...
+Running Hvigor task assembleHap...                              
+> hvigor [32mstart to execute ohpm install[39m
+ohpm INFO: remove useless folder succeed: "D:\wbc\shuyo\.tools\harmony-app\ohos\oh_modules\.tmp"
+[32minstall completed in 0s 113ms[39m
+> hvigor [32mUP-TO-DATE :entry:default@PreBuild...  [39m
+> hvigor [32mUP-TO-DATE :shared_preferences_ohos:default@PreBuild...  [39m
+> hvigor [32mUP-TO-DATE :webview_flutter_ohos:default@PreBuild...  [39m
+flutter assemble: 
+copy flutter assets to project start
+copy flutter assets to project end
+copy ConfigsFile start
+buildinfo.json5 not exist
+framesconfig.json not exist
+copy ConfigsFile end
+> hvigor [32mFinished :entry:default@FlutterTask... after 2 s 455 ms [39m
+> hvigor [32mFinished :entry:default@CreateModuleInfo... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:default@GenerateMetadata...  [39m
+> hvigor [32mFinished :entry:default@PreCheckSyscap... after 1 ms [39m
+> hvigor [32mFinished :entry:default@GeneratePkgContextInfo... after 10 ms [39m
+> hvigor [32mFinished :entry:default@ProcessIntegratedHsp... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :shared_preferences_ohos:default@CreateHarBuildProfile...  [39m
+> hvigor [32mFinished :shared_preferences_ohos:default@ConfigureCmake... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :shared_preferences_ohos:default@MergeProfile...  [39m
+> hvigor [32mUP-TO-DATE :webview_flutter_ohos:default@CreateHarBuildProfile...  [39m
+> hvigor [32mFinished :webview_flutter_ohos:default@ConfigureCmake... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :webview_flutter_ohos:default@MergeProfile...  [39m
+> hvigor [32mFinished :entry:default@SyscapTransform... after 9 ms [39m
+> hvigor [32mUP-TO-DATE :entry:default@ProcessRouterMap...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@ProcessShareConfig...  [39m
+> hvigor [32mFinished :entry:default@ProcessStartupConfig... after 2 ms [39m
+> hvigor [32mFinished :shared_preferences_ohos:default@BuildNativeWithCmake... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:default@CreateBuildProfile...  [39m
+> hvigor [32mFinished :webview_flutter_ohos:default@BuildNativeWithCmake... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:default@MergeProfile...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@GenerateLoaderJson...  [39m
+> hvigor [32mFinished :shared_preferences_ohos:default@BuildNativeWithNinja... after 1 ms [39m
+> hvigor [32mFinished :entry:default@ConfigureCmake... after 1 ms [39m
+> hvigor [32mFinished :webview_flutter_ohos:default@BuildNativeWithNinja... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :entry:default@MakePackInfo...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@ProcessProfile...  [39m
+> hvigor [32mUP-TO-DATE :shared_preferences_ohos:default@ProcessLibs...  [39m
+> hvigor [32mFinished :entry:default@BuildNativeWithCmake... after 1 ms [39m
+> hvigor [32mUP-TO-DATE :webview_flutter_ohos:default@ProcessLibs...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@ProcessResource...  [39m
+> hvigor [32mUP-TO-DATE :shared_preferences_ohos:default@DoNativeStrip...  [39m
+> hvigor [32mUP-TO-DATE :webview_flutter_ohos:default@DoNativeStrip...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@CompileResource...  [39m
+> hvigor [32mFinished :entry:default@BuildNativeWithNinja... after 1 ms [39m
+> hvigor [32mFinished :entry:default@BuildJS... after 3 ms [39m
+> hvigor [32mUP-TO-DATE :entry:default@ProcessLibs...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@DoNativeStrip...  [39m
+> hvigor [32mUP-TO-DATE :entry:default@CacheNativeLibs...  [39m
+> hvigor WARN: The project has not explicitly set the 'targetSdkVersion' version at build-profile.json5. It is recommended to configure it. Reference: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section45865492619
+> hvigor ERROR: Failed :entry:default@CompileArkTS... 
+> hvigor WARN: 
+1 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/common/Any.ets:7:20
+ Usage of 'ESObject' type is restricted (arkts-limited-esobj)
+
+2 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/TextInputChannel.ets:698:3
+ Usage of 'ESObject' type is restricted (arkts-limited-esobj)
+
+3 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/InstanceManager.ets:45:38
+ Usage of 'ESObject' type is restricted (arkts-limited-esobj)
+
+4 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/InstanceManager.ets:48:49
+ Usage of 'ESObject' type is restricted (arkts-limited-esobj)
+
+5 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/DynamicUtils.ets:8:74
+ Usage of 'ESObject' type is restricted (arkts-limited-esobj)
+
+6 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/DownloadListenerFlutterApiImpl.ets:21:43
+ Usage of 'ESObject' type is restricted (arkts-limited-esobj)
+
+7 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:335:54
+ Usage of 'ESObject' type is restricted (arkts-limited-esobj)
+
+8 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-preferences/packages/shared_preferences/shared_preferences_ohos/ohos/src/main/ets/shared_preferences/MessagesAsync.ets:332:26
+ Argument of type 'string | null' is not assignable to parameter of type 'Object'.
+  Type 'null' is not assignable to type 'Object'.
+
+9 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-preferences/packages/shared_preferences/shared_preferences_ohos/ohos/src/main/ets/shared_preferences/MessagesAsync.ets:359:26
+ Argument of type 'boolean | null' is not assignable to parameter of type 'Object'.
+  Type 'null' is not assignable to type 'Object'.
+
+10 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-preferences/packages/shared_preferences/shared_preferences_ohos/ohos/src/main/ets/shared_preferences/MessagesAsync.ets:386:26
+ Argument of type 'number | null' is not assignable to parameter of type 'Object'.
+  Type 'null' is not assignable to type 'Object'.
+
+11 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-preferences/packages/shared_preferences/shared_preferences_ohos/ohos/src/main/ets/shared_preferences/MessagesAsync.ets:413:26
+ Argument of type 'bigint | null' is not assignable to parameter of type 'Object'.
+  Type 'null' is not assignable to type 'Object'.
+
+12 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-preferences/packages/shared_preferences/shared_preferences_ohos/ohos/src/main/ets/shared_preferences/MessagesAsync.ets:440:26
+ Argument of type 'string[] | null' is not assignable to parameter of type 'Object'.
+  Type 'null' is not assignable to type 'Object'.
+
+13 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-preferences/packages/shared_preferences/shared_preferences_ohos/ohos/src/main/ets/shared_preferences/MessagesAsync.ets:467:26
+ Argument of type 'StringListResult | null' is not assignable to parameter of type 'Object'.
+  Type 'null' is not assignable to type 'Object'.
+
+14 WARN: ArkTS:WARN: For details about ArkTS syntax errors, see FAQs
+15 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/util/StringUtils.ets:7:21
+ Currently module for 'libflutter.so' is not verified. If you're importing napi, its verification will be enabled in later SDK version. Please make sure the corresponding .d.ts file is provided and the napis are correctly declared.
+
+16 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/dart/DartMessenger.ets:402:5
+ Function may throw exceptions. Special handling is required.
+
+17 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/dart/DartMessenger.ets:443:5
+ Function may throw exceptions. Special handling is required.
+
+18 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/dart/DartMessenger.ets:453:20
+ Function may throw exceptions. Special handling is required.
+
+19 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/loader/FlutterLoader.ets:129:34
+ 'decodeWithStream' has been deprecated.
+
+20 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/loader/FlutterLoader.ets:392:12
+ Function may throw exceptions. Special handling is required.
+
+21 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/loader/FlutterLoader.ets:392:37
+ Function may throw exceptions. Special handling is required.
+
+22 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/common/JSONMessageCodec.ets:87:30
+ Function may throw exceptions. Special handling is required.
+
+23 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/common/JSONMessageCodec.ets:91:7
+ Function may throw exceptions. Special handling is required.
+
+24 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/util/ByteBuffer.ets:744:20
+ 'decode' has been deprecated.
+
+25 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/util/ByteBuffer.ets:780:29
+ 'encodeInto' has been deprecated.
+
+26 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/common/StandardMessageCodec.ets:196:7
+ Function may throw exceptions. Special handling is required.
+
+27 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/DynamicView/dynamicView.ets:222:6
+ 'clip' has been deprecated.
+
+28 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/DynamicView/dynamicView.ets:227:6
+ 'clip' has been deprecated.
+
+29 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/TextInputChannel.ets:109:5
+ Function may throw exceptions. Special handling is required.
+
+30 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/TextInputChannel.ets:735:49
+ 'getRectangleById' has been deprecated.
+
+31 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/util/PasteboardUtils.ets:53:30
+ To use this API, you need to apply for the permissions: ohos.permission.READ_PASTEBOARD
+
+32 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:565:5
+ Function may throw exceptions. Special handling is required.
+
+33 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:568:5
+ Function may throw exceptions. Special handling is required.
+
+34 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:576:5
+ Function may throw exceptions. Special handling is required.
+
+35 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:591:5
+ Function may throw exceptions. Special handling is required.
+
+36 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:1478:43
+ Function may throw exceptions. Special handling is required.
+
+37 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:1500:12
+ Function may throw exceptions. Special handling is required.
+
+38 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:1510:7
+ Function may throw exceptions. Special handling is required.
+
+39 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:1512:5
+ Function may throw exceptions. Special handling is required.
+
+40 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:1525:7
+ Function may throw exceptions. Special handling is required.
+
+41 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:1527:7
+ Function may throw exceptions. Special handling is required.
+
+42 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:1539:5
+ Function may throw exceptions. Special handling is required.
+
+43 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/ListenableEditingState.ets:1541:7
+ Function may throw exceptions. Special handling is required.
+
+44 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/TextInputPlugin.ets:622:5
+ Function may throw exceptions. Special handling is required.
+
+45 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/TextInputPlugin.ets:638:7
+ Function may throw exceptions. Special handling is required.
+
+46 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/TextInputPlugin.ets:640:7
+ Function may throw exceptions. Special handling is required.
+
+47 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/TextInputPlugin.ets:1027:17
+ Function may throw exceptions. Special handling is required.
+
+48 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/TextInputPlugin.ets:1029:17
+ Function may throw exceptions. Special handling is required.
+
+49 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/TextInputPlugin.ets:1811:7
+ Function may throw exceptions. Special handling is required.
+
+50 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/KeyData.ets:74:34
+ 'decode' has been deprecated.
+
+51 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/KeyData.ets:85:70
+ 'encode' has been deprecated.
+
+52 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/KeyEventHandler.ets:140:34
+ The 'isCapsLockOn' API is supported since SDK version 19. However, the current compatible SDK version is 5.1.0(18).
+
+53 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/KeyEventHandler.ets:140:69
+ The 'isCapsLockOn' API is supported since SDK version 19. However, the current compatible SDK version is 5.1.0(18).
+
+54 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/KeyEventHandler.ets:231:37
+ The 'isNumLockOn' API is supported since SDK version 19. However, the current compatible SDK version is 5.1.0(18).
+
+55 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/KeyEventHandler.ets:231:71
+ The 'isNumLockOn' API is supported since SDK version 19. However, the current compatible SDK version is 5.1.0(18).
+
+56 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:66:7
+ Function may throw exceptions. Special handling is required.
+
+57 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:67:7
+ Function may throw exceptions. Special handling is required.
+
+58 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:68:7
+ Function may throw exceptions. Special handling is required.
+
+59 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:69:7
+ Function may throw exceptions. Special handling is required.
+
+60 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:70:7
+ Function may throw exceptions. Special handling is required.
+
+61 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:71:7
+ Function may throw exceptions. Special handling is required.
+
+62 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:72:7
+ Function may throw exceptions. Special handling is required.
+
+63 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:73:7
+ Function may throw exceptions. Special handling is required.
+
+64 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:74:7
+ Function may throw exceptions. Special handling is required.
+
+65 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:75:7
+ Function may throw exceptions. Special handling is required.
+
+66 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:76:7
+ Function may throw exceptions. Special handling is required.
+
+67 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:77:7
+ Function may throw exceptions. Special handling is required.
+
+68 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:78:7
+ Function may throw exceptions. Special handling is required.
+
+69 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:79:7
+ Function may throw exceptions. Special handling is required.
+
+70 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:80:7
+ Function may throw exceptions. Special handling is required.
+
+71 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:81:7
+ Function may throw exceptions. Special handling is required.
+
+72 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:82:7
+ Function may throw exceptions. Special handling is required.
+
+73 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:83:7
+ Function may throw exceptions. Special handling is required.
+
+74 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:84:7
+ Function may throw exceptions. Special handling is required.
+
+75 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:85:7
+ Function may throw exceptions. Special handling is required.
+
+76 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:86:7
+ Function may throw exceptions. Special handling is required.
+
+77 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:87:7
+ Function may throw exceptions. Special handling is required.
+
+78 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:88:7
+ Function may throw exceptions. Special handling is required.
+
+79 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:89:7
+ Function may throw exceptions. Special handling is required.
+
+80 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:90:7
+ Function may throw exceptions. Special handling is required.
+
+81 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:91:7
+ Function may throw exceptions. Special handling is required.
+
+82 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:92:7
+ Function may throw exceptions. Special handling is required.
+
+83 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:93:7
+ Function may throw exceptions. Special handling is required.
+
+84 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:94:7
+ Function may throw exceptions. Special handling is required.
+
+85 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:95:7
+ Function may throw exceptions. Special handling is required.
+
+86 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:96:7
+ Function may throw exceptions. Special handling is required.
+
+87 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:97:7
+ Function may throw exceptions. Special handling is required.
+
+88 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:98:7
+ Function may throw exceptions. Special handling is required.
+
+89 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:99:7
+ Function may throw exceptions. Special handling is required.
+
+90 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:100:7
+ Function may throw exceptions. Special handling is required.
+
+91 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:101:7
+ Function may throw exceptions. Special handling is required.
+
+92 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:102:7
+ Function may throw exceptions. Special handling is required.
+
+93 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:103:7
+ Function may throw exceptions. Special handling is required.
+
+94 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:104:7
+ Function may throw exceptions. Special handling is required.
+
+95 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:105:7
+ Function may throw exceptions. Special handling is required.
+
+96 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:106:7
+ Function may throw exceptions. Special handling is required.
+
+97 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:107:7
+ Function may throw exceptions. Special handling is required.
+
+98 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:108:7
+ Function may throw exceptions. Special handling is required.
+
+99 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:109:7
+ Function may throw exceptions. Special handling is required.
+
+100 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:111:7
+ Function may throw exceptions. Special handling is required.
+
+101 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:112:7
+ Function may throw exceptions. Special handling is required.
+
+102 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:113:7
+ Function may throw exceptions. Special handling is required.
+
+103 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:114:7
+ Function may throw exceptions. Special handling is required.
+
+104 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:115:7
+ Function may throw exceptions. Special handling is required.
+
+105 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:116:7
+ Function may throw exceptions. Special handling is required.
+
+106 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:117:7
+ Function may throw exceptions. Special handling is required.
+
+107 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:118:7
+ Function may throw exceptions. Special handling is required.
+
+108 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/mouse/MouseCursorPlugin.ets:120:44
+ Function may throw exceptions. Special handling is required.
+
+109 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:217:13
+ 'screenX' has been deprecated.
+
+110 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:218:13
+ 'screenY' has been deprecated.
+
+111 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:269:44
+ 'vp2px' has been deprecated.
+
+112 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:270:44
+ 'vp2px' has been deprecated.
+
+113 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:271:43
+ 'vp2px' has been deprecated.
+
+114 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:272:43
+ 'vp2px' has been deprecated.
+
+115 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:273:33
+ 'screenX' has been deprecated.
+
+116 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:273:43
+ 'vp2px' has been deprecated.
+
+117 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:273:73
+ 'screenX' has been deprecated.
+
+118 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:274:33
+ 'screenY' has been deprecated.
+
+119 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:274:43
+ 'vp2px' has been deprecated.
+
+120 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:274:73
+ 'screenY' has been deprecated.
+
+121 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:275:37
+ 'vp2px' has been deprecated.
+
+122 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:276:37
+ 'vp2px' has been deprecated.
+
+123 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:282:37
+ 'vp2px' has been deprecated.
+
+124 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:283:37
+ 'vp2px' has been deprecated.
+
+125 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:284:36
+ 'vp2px' has been deprecated.
+
+126 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:285:36
+ 'vp2px' has been deprecated.
+
+127 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:286:26
+ 'screenX' has been deprecated.
+
+128 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:286:36
+ 'vp2px' has been deprecated.
+
+129 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:286:59
+ 'screenX' has been deprecated.
+
+130 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:287:26
+ 'screenY' has been deprecated.
+
+131 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:287:36
+ 'vp2px' has been deprecated.
+
+132 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:287:59
+ 'screenY' has been deprecated.
+
+133 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:288:30
+ 'vp2px' has been deprecated.
+
+134 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:289:30
+ 'vp2px' has been deprecated.
+
+135 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:442:25
+ Function may throw exceptions. Special handling is required.
+
+136 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:467:29
+ Function may throw exceptions. Special handling is required.
+
+137 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:469:7
+ Function may throw exceptions. Special handling is required.
+
+138 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:766:26
+ Function may throw exceptions. Special handling is required.
+
+139 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:941:14
+ 'px2vp' has been deprecated.
+
+140 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:942:15
+ 'px2vp' has been deprecated.
+
+141 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:951:20
+ Function may throw exceptions. Special handling is required.
+
+142 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1164:44
+ 'vp2px' has been deprecated.
+
+143 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1165:45
+ 'vp2px' has been deprecated.
+
+144 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1366:5
+ Function may throw exceptions. Special handling is required.
+
+145 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1374:5
+ Function may throw exceptions. Special handling is required.
+
+146 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1382:5
+ Function may throw exceptions. Special handling is required.
+
+147 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1390:5
+ Function may throw exceptions. Special handling is required.
+
+148 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1408:23
+ Function may throw exceptions. Special handling is required.
+
+149 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1409:7
+ Function may throw exceptions. Special handling is required.
+
+150 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1413:23
+ Function may throw exceptions. Special handling is required.
+
+151 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/FlutterView.ets:1414:7
+ Function may throw exceptions. Special handling is required.
+
+152 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:57:5
+ Function may throw exceptions. Special handling is required.
+
+153 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:101:5
+ Function may throw exceptions. Special handling is required.
+
+154 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:111:5
+ Function may throw exceptions. Special handling is required.
+
+155 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:121:5
+ Function may throw exceptions. Special handling is required.
+
+156 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:131:5
+ Function may throw exceptions. Special handling is required.
+
+157 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:140:5
+ Function may throw exceptions. Special handling is required.
+
+158 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:148:5
+ Function may throw exceptions. Special handling is required.
+
+159 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:156:5
+ Function may throw exceptions. Special handling is required.
+
+160 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:164:5
+ Function may throw exceptions. Special handling is required.
+
+161 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:218:5
+ Function may throw exceptions. Special handling is required.
+
+162 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:380:24
+ Function may throw exceptions. Special handling is required.
+
+163 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:402:26
+ Function may throw exceptions. Special handling is required.
+
+164 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:525:24
+ Function may throw exceptions. Special handling is required.
+
+165 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:543:9
+ Function may throw exceptions. Special handling is required.
+
+166 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:548:29
+ Function may throw exceptions. Special handling is required.
+
+167 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:554:31
+ 'vp2px' has been deprecated.
+
+168 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:568:24
+ Function may throw exceptions. Special handling is required.
+
+169 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:651:24
+ 'getContext' has been deprecated.
+
+170 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:655:5
+ Function may throw exceptions. Special handling is required.
+
+171 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:655:5
+ Function may throw exceptions. Special handling is required.
+
+172 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:658:7
+ Function may throw exceptions. Special handling is required.
+
+173 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:658:7
+ Function may throw exceptions. Special handling is required.
+
+174 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:671:24
+ 'getContext' has been deprecated.
+
+175 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:675:5
+ Function may throw exceptions. Special handling is required.
+
+176 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:675:5
+ Function may throw exceptions. Special handling is required.
+
+177 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:678:7
+ Function may throw exceptions. Special handling is required.
+
+178 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterManager.ets:678:7
+ Function may throw exceptions. Special handling is required.
+
+179 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/platform/PlatformViewRegistryImpl.ets:36:9
+ Function may throw exceptions. Special handling is required.
+
+180 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/platform/PlatformViewRegistryImpl.ets:40:5
+ Function may throw exceptions. Special handling is required.
+
+181 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/platform/PlatformViewRegistryImpl.ets:50:12
+ Function may throw exceptions. Special handling is required.
+
+182 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/mutatorsstack/FlutterMutatorsStack.ets:149:5
+ Function may throw exceptions. Special handling is required.
+
+183 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/mutatorsstack/FlutterMutatorsStack.ets:162:5
+ Function may throw exceptions. Special handling is required.
+
+184 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/mutatorsstack/FlutterMutatorsStack.ets:163:5
+ Function may throw exceptions. Special handling is required.
+
+185 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/mutatorsstack/FlutterMutatorsStack.ets:175:5
+ Function may throw exceptions. Special handling is required.
+
+186 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/mutatorsstack/FlutterMutatorsStack.ets:176:5
+ Function may throw exceptions. Special handling is required.
+
+187 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/mutatorsstack/FlutterMutatorView.ets:124:10
+ Function may throw exceptions. Special handling is required.
+
+188 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/mutatorsstack/FlutterMutatorView.ets:125:18
+ Function may throw exceptions. Special handling is required.
+
+189 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/mutatorsstack/FlutterMutatorView.ets:130:10
+ Function may throw exceptions. Special handling is required.
+
+190 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/mutatorsstack/FlutterMutatorView.ets:131:18
+ Function may throw exceptions. Special handling is required.
+
+191 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:341:33
+ Function may throw exceptions. Special handling is required.
+
+192 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:416:27
+ 'vp2px' has been deprecated.
+
+193 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:417:27
+ 'vp2px' has been deprecated.
+
+194 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:418:33
+ 'vp2px' has been deprecated.
+
+195 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:419:33
+ 'vp2px' has been deprecated.
+
+196 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:420:34
+ 'vp2px' has been deprecated.
+
+197 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:421:34
+ 'vp2px' has been deprecated.
+
+198 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:503:21
+ 'vp2px' has been deprecated.
+
+199 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:504:21
+ 'vp2px' has been deprecated.
+
+200 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:505:27
+ 'vp2px' has been deprecated.
+
+201 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:506:27
+ 'vp2px' has been deprecated.
+
+202 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:551:33
+ Function may throw exceptions. Special handling is required.
+
+203 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:654:49
+ 'vp2px' has been deprecated.
+
+204 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventProcessor.ets:655:44
+ 'vp2px' has been deprecated.
+
+205 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/platform/PlatformViewsController.ets:1034:12
+ Function may throw exceptions. Special handling is required.
+
+206 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/platform/PlatformViewsController.ets:1044:23
+ 'px2vp' has been deprecated.
+
+207 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/platform/PlatformViewsController.ets:1102:5
+ Function may throw exceptions. Special handling is required.
+
+208 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/platform/PlatformViewsController.ets:1103:5
+ Function may throw exceptions. Special handling is required.
+
+209 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineGroup.ets:103:5
+ Function may throw exceptions. Special handling is required.
+
+210 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineGroup.ets:145:7
+ Function may throw exceptions. Special handling is required.
+
+211 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineGroup.ets:232:5
+ Function may throw exceptions. Special handling is required.
+
+212 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineConnectionRegistry.ets:286:5
+ Function may throw exceptions. Special handling is required.
+
+213 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineConnectionRegistry.ets:294:5
+ Function may throw exceptions. Special handling is required.
+
+214 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineConnectionRegistry.ets:302:5
+ Function may throw exceptions. Special handling is required.
+
+215 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineConnectionRegistry.ets:310:5
+ Function may throw exceptions. Special handling is required.
+
+216 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineConnectionRegistry.ets:318:5
+ Function may throw exceptions. Special handling is required.
+
+217 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineConnectionRegistry.ets:326:5
+ Function may throw exceptions. Special handling is required.
+
+218 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineConnectionRegistry.ets:335:5
+ Function may throw exceptions. Special handling is required.
+
+219 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineConnectionRegistry.ets:345:5
+ Function may throw exceptions. Special handling is required.
+
+220 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEngineConnectionRegistry.ets:357:5
+ Function may throw exceptions. Special handling is required.
+
+221 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/PlatformChannel.ets:23:21
+ Currently module for 'libflutter.so' is not verified. If you're importing napi, its verification will be enabled in later SDK version. Please make sure the corresponding .d.ts file is provided and the napis are correctly declared.
+
+222 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/LocalizationChannel.ets:84:29
+ 'Locale' has been deprecated.
+
+223 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/LocalizationChannel.ets:85:24
+ 'language' has been deprecated.
+
+224 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/LocalizationChannel.ets:86:24
+ 'region' has been deprecated.
+
+225 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/LocalizationChannel.ets:87:24
+ 'script' has been deprecated.
+
+226 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/AccessibilityChannel.ets:19:21
+ Currently module for 'libflutter.so' is not verified. If you're importing napi, its verification will be enabled in later SDK version. Please make sure the corresponding .d.ts file is provided and the napis are correctly declared.
+
+227 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/AccessibilityChannel.ets:46:24
+ Function may throw exceptions. Special handling is required.
+
+228 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/AccessibilityChannel.ets:47:38
+ Function may throw exceptions. Special handling is required.
+
+229 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/AccessibilityChannel.ets:53:39
+ Function may throw exceptions. Special handling is required.
+
+230 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/AccessibilityChannel.ets:62:30
+ Function may throw exceptions. Special handling is required.
+
+231 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/AccessibilityChannel.ets:70:30
+ Function may throw exceptions. Special handling is required.
+
+232 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/systemchannels/AccessibilityChannel.ets:78:38
+ Function may throw exceptions. Special handling is required.
+
+233 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/localization/LocalizationPlugin.ets:52:21
+ 'Locale' has been deprecated.
+
+234 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/localization/LocalizationPlugin.ets:97:44
+ 'getSystemLocale' has been deprecated.
+
+235 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:86:5
+ Function may throw exceptions. Special handling is required.
+
+236 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:92:7
+ Function may throw exceptions. Special handling is required.
+
+237 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:96:33
+ Function may throw exceptions. Special handling is required.
+
+238 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:98:50
+ 'vp2px' has been deprecated.
+
+239 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:205:15
+ Function may throw exceptions. Special handling is required.
+
+240 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:205:24
+ To use this API, you need to apply for the permissions: ohos.permission.VIBRATE
+
+241 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:209:15
+ Function may throw exceptions. Special handling is required.
+
+242 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:209:24
+ To use this API, you need to apply for the permissions: ohos.permission.VIBRATE
+
+243 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:213:15
+ Function may throw exceptions. Special handling is required.
+
+244 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:213:24
+ To use this API, you need to apply for the permissions: ohos.permission.VIBRATE
+
+245 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:217:15
+ Function may throw exceptions. Special handling is required.
+
+246 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:217:24
+ To use this API, you need to apply for the permissions: ohos.permission.VIBRATE
+
+247 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:221:15
+ Function may throw exceptions. Special handling is required.
+
+248 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:221:24
+ To use this API, you need to apply for the permissions: ohos.permission.VIBRATE
+
+249 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:312:12
+ 'back' has been deprecated.
+
+250 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:341:28
+ To use this API, you need to apply for the permissions: ohos.permission.READ_PASTEBOARD
+
+251 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:463:26
+ Function may throw exceptions. Special handling is required.
+
+252 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/PlatformPlugin.ets:525:5
+ Function may throw exceptions. Special handling is required.
+
+253 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/view/SensitiveContentPlugin.ets:47:28
+ 'getContext' has been deprecated.
+
+254 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/view/SensitiveContentPlugin.ets:53:28
+ To use this API, you need to apply for the permissions: ohos.permission.PRIVACY_WINDOW
+
+255 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterAbility.ets:114:27
+ Function may throw exceptions. Special handling is required.
+
+256 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterAbility.ets:130:5
+ Function may throw exceptions. Special handling is required.
+
+257 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterAbility.ets:165:23
+ Function may throw exceptions. Special handling is required.
+
+258 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/renderer/FlutterRenderer.ets:174:47
+ 'createImageReceiver' has been deprecated.
+
+259 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterNapi.ets:7:21
+ Currently module for 'libflutter.so' is not verified. If you're importing napi, its verification will be enabled in later SDK version. Please make sure the corresponding .d.ts file is provided and the napis are correctly declared.
+
+260 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEnginePreload.ets:55:43
+ Function may throw exceptions. Special handling is required.
+
+261 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/engine/FlutterEnginePreload.ets:111:43
+ Function may throw exceptions. Special handling is required.
+
+262 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterEntry.ets:89:7
+ Function may throw exceptions. Special handling is required.
+
+263 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterPage.ets:13:21
+ Currently module for 'libflutter.so' is not verified. If you're importing napi, its verification will be enabled in later SDK version. Please make sure the corresponding .d.ts file is provided and the napis are correctly declared.
+
+264 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventTracker.ets:46:5
+ Function may throw exceptions. Special handling is required.
+
+265 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventTracker.ets:47:5
+ Function may throw exceptions. Special handling is required.
+
+266 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventTracker.ets:59:45
+ Function may throw exceptions. Special handling is required.
+
+267 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventTracker.ets:60:7
+ Function may throw exceptions. Special handling is required.
+
+268 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventTracker.ets:60:29
+ Function may throw exceptions. Special handling is required.
+
+269 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventTracker.ets:64:42
+ Function may throw exceptions. Special handling is required.
+
+270 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventTracker.ets:65:7
+ Function may throw exceptions. Special handling is required.
+
+271 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventTracker.ets:68:31
+ Function may throw exceptions. Special handling is required.
+
+272 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/TouchEventTracker.ets:69:5
+ Function may throw exceptions. Special handling is required.
+
+273 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/common/SendableStandardMessageCodec.ets:193:7
+ Function may throw exceptions. Special handling is required.
+
+274 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/common/SendableJSONMessageCodec.ets:92:30
+ Function may throw exceptions. Special handling is required.
+
+275 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/common/SendableJSONMessageCodec.ets:96:7
+ Function may throw exceptions. Special handling is required.
+
+276 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/util/PathUtils.ets:43:10
+ Function may throw exceptions. Special handling is required.
+
+277 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/CookieManagerHostApiImpl.ets:36:5
+ Function may throw exceptions. Special handling is required.
+
+278 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/CookieManagerHostApiImpl.ets:36:34
+ 'setCookie' has been deprecated.
+
+279 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/GeneratedOhosWebView.ets:20:7
+ Function may throw exceptions. Special handling is required.
+
+280 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/GeneratedOhosWebView.ets:21:7
+ Function may throw exceptions. Special handling is required.
+
+281 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/GeneratedOhosWebView.ets:22:7
+ Function may throw exceptions. Special handling is required.
+
+282 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/GeneratedOhosWebView.ets:24:7
+ Function may throw exceptions. Special handling is required.
+
+283 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/GeneratedOhosWebView.ets:25:7
+ Function may throw exceptions. Special handling is required.
+
+284 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/GeneratedOhosWebView.ets:26:7
+ Function may throw exceptions. Special handling is required.
+
+285 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/OhosWebView.ets:104:12
+ 'wideViewModeAccess' has been deprecated.
+
+286 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebChromeClientHostApiImpl.ets:284:5
+ Function may throw exceptions. Special handling is required.
+
+287 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/DisplayListenerProxy.ets:19:23
+ Function may throw exceptions. Special handling is required.
+
+288 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:107:5
+ Function may throw exceptions. Special handling is required.
+
+289 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:131:13
+ 'getContext' has been deprecated.
+
+290 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:173:12
+ Function may throw exceptions. Special handling is required.
+
+291 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:178:12
+ Function may throw exceptions. Special handling is required.
+
+292 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:183:12
+ Function may throw exceptions. Special handling is required.
+
+293 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:188:5
+ Function may throw exceptions. Special handling is required.
+
+294 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:193:5
+ Function may throw exceptions. Special handling is required.
+
+295 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:198:5
+ Function may throw exceptions. Special handling is required.
+
+296 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:228:12
+ Function may throw exceptions. Special handling is required.
+
+297 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:304:5
+ Function may throw exceptions. Special handling is required.
+
+298 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:612:19
+ 'getContext' has been deprecated.
+
+299 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:623:19
+ 'getContext' has been deprecated.
+
+300 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:639:5
+ Function may throw exceptions. Special handling is required.
+
+301 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:654:5
+ Function may throw exceptions. Special handling is required.
+
+302 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:658:5
+ Function may throw exceptions. Special handling is required.
+
+303 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:667:5
+ Function may throw exceptions. Special handling is required.
+
+304 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/WebViewHostApiImpl.ets:925:14
+ Function may throw exceptions. Special handling is required.
+
+305 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/ohos-webview/packages/webview_flutter/webview_flutter_ohos/ohos/src/main/ets/io.flutter.plugins/webview_flutter/FlutterAssetManager.ets:20:18
+ Function may throw exceptions. Special handling is required.
+
+306 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/entry/src/main/ets/platform/SchedulePlatformBridge.ets:52:24
+ Function may throw exceptions. Special handling is required.
+
+307 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/entry/src/main/ets/platform/SchedulePlatformBridge.ets:54:26
+ Function may throw exceptions. Special handling is required.
+
+308 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/entry/src/main/ets/platform/SchedulePlatformBridge.ets:62:29
+ Function may throw exceptions. Special handling is required.
+
+309 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/entry/src/main/ets/platform/SchedulePlatformBridge.ets:67:64
+ 'decodeWithStream' has been deprecated.
+
+310 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/entry/src/main/ets/platform/SchedulePlatformBridge.ets:69:13
+ Function may throw exceptions. Special handling is required.
+
+311 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/entry/src/main/ets/pages/Index.ets:5:28
+ 'getShared' has been deprecated.
+
+312 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/entry/src/main/ets/pages/Index.ets:11:21
+ 'getContext' has been deprecated.
+
+313 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterPage.ets:219:16
+ The current component id "unfocus-xcomponent-node" is duplicate with D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterPage.ets:153:16.
+314 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterPage.ets:145:18
+ The 'regular' property 'child as DVModel' cannot be assigned to the '@ObjectLink' property 'model'.
+315 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/FlutterPage.ets:211:18
+ The 'regular' property 'child as DVModel' cannot be assigned to the '@ObjectLink' property 'model'.
+316 WARN: ArkTS:WARN File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/view/DynamicView/dynamicView.ets:239:18
+ The 'regular' property 'child as DVModel' cannot be assigned to the '@ObjectLink' property 'model'.
+> hvigor ERROR: ArkTS Compiler Error
+1 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'AutoFillType'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:106:33
+
+
+2 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'AutoFillType'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:204:68
+
+
+3 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'AutoFillType'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:205:37
+
+
+4 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'ViewData'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:509:77
+
+
+5 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'ViewData'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:524:47
+
+
+6 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'ViewData'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:527:52
+
+
+7 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'AutoFillTriggerType'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:563:69
+
+
+8 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'FillRequest'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:564:26
+
+
+9 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'AutoFillCallback'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:565:37
+
+
+10 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'ViewData'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:566:51
+
+
+11 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'FillFailureResult'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:570:43
+
+
+12 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Property 'requestAutoFill' does not exist on type 'typeof autoFillManager'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:576:23
+
+
+13 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Namespace 'autoFillManager' has no exported member 'SaveRequest'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:594:40
+
+
+14 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Expected 1-2 arguments, but got 3. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/plugin/editing/OhosAutoFillHelper.ets:604:63
+
+
+15 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Cannot find name 'CompetitionStrategy'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:235:73
+
+
+16 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Cannot find name 'CompetitionStrategy'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:248:73
+
+
+17 ERROR: 10505001 ArkTS Compiler Error
+Error Message: Cannot find name 'CompetitionStrategy'. At File: D:/wbc/shuyo/.tools/harmony-app/ohos/oh_modules/.ohpm/@ohos+flutter_ohos@3lva+ifsootalwavc+dkgyk29wf4elgjagytskop+34=/oh_modules/@ohos/flutter_ohos/src/main/ets/embedding/ohos/EmbeddingNodeController.ets:298:80
+
+
+COMPILE RESULT:FAIL {ERROR:18 WARN:316}
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+
+> hvigor ERROR: BUILD FAILED in 12 s 892 ms 
+
+Oops; flutter has exited unexpectedly: "ProcessException: The command failed with exit code 1
+  Command: hvigorw assembleHap -p product=default -p buildMode=release --no-daemon -p FLUTTER_TARGET=lib\main.dart -p TARGET_PLATFORM=ohos-arm64 -p DART_DEFINES=RkxVVFRFUl9WRVJTSU9OPTMuNDEuMTAtb2hvcy0xLjAuMQ==,RkxVVFRFUl9DSEFOTkVMPVt1c2VyLWJyYW5jaF0=,RkxVVFRFUl9HSVRfVVJMPXVua25vd24gc291cmNl,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049YWRhZjkxMWMzNQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049NDJkM2Q3NWE1Ng==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMS41 -p DART_OBFUSCATION=false -p TRACK_WIDGET_CREATION=true -p TREE_SHAKE_ICONS=true -p PACKAGE_CONFIG=D:\wbc\shuyo\.tools\harmony-app\.dart_tool\package_config.json".
+A crash report has been written to D:\wbc\shuyo\.tools\harmony-app\flutter_03.log
+This crash may already be reported. Check GitHub for similar crashes.
+https://github.com/flutter/flutter/issues?q=is%3Aissue+ProcessException%3A+The+command+failed+with+exit+code+1%0A++Command%3A+hvigorw+assembleHap+-p+product%3Ddefault+-p+buildMode%3Drelease+--no-daemon+-p+FLUTTER_TARGET%3Dlib%5Cmain.dart+-p+TARGET_PLATFORM%3Dohos-arm64+-p+DART_DEFINES%3DRkxVVFRFUl9WRVJTSU9OPTMuNDEuMTAtb2hvcy0xLjAuMQ%3D%3D%2CRkxVVFRFUl9DSEFOTkVMPVt1c2VyLWJyYW5jaF0%3D%2CRkxVVFRFUl9HSVRfVVJMPXVua25vd24gc291cmNl%2CRkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049YWRhZjkxMWMzNQ%3D%3D%2CRkxVVFRFUl9FTkdJTkVfUkVWSVNJT049NDJkM2Q3NWE1Ng%3D%3D%2CRkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMS41+-p+DART_OBFUSCATION%3Dfalse+-p+TRACK_WIDGET_CREATION%3Dtrue+-p+TREE_SHAKE_ICONS%3Dtrue+-p+PACKAGE_CONFIG%3DD%3A%5Cwbc%5Cshuyo%5C.tools%5Charmony-app%5C.dart_tool%5Cpackage_config.json
+
+To report your crash to the Flutter team, first read the guide to filing a bug.
+https://flutter.dev/to/report-bugs
+
+Create a new GitHub issue by pasting this link into your browser and completing the issue template. Thank you!
+https://github.com/flutter/flutter/issues/new?title=%5Btool_crash%5D+ProcessException%3A+The+command+failed+with+exit+code+1+Command%3A+hvigorw%2C+OS+error+code%3A+1&body=%23%23+Command%0A%60%60%60sh%0Aflutter+build+hap+--release+--no-pub+--no-codesign%0A%60%60%60%0A%0A%23%23+Steps+to+Reproduce%0A1.+...%0A2.+...%0A3.+...%0A%0A%23%23+Logs%0AProcessException%3A+The+command+failed+with+exit+code+1+Command%3A+hvigorw%2C+OS+error+code%3A+1%0A%60%60%60console%0A%230++++++RunResult.throwException+%28package%3Aflutter_tools%2Fsrc%2Fbase%2Fprocess.dart%3A153%3A5%29%0A%231++++++_DefaultProcessUtils.runSync+%28package%3Aflutter_tools%2Fsrc%2Fbase%2Fprocess.dart%3A523%3A17%29%0A%232++++++hvigorwTask+%28package%3Aflutter_tools%2Fsrc%2Fohos%2Fhvigor.dart%3A131%3A41%29%0A%233++++++assembleHap+%28package%3Aflutter_tools%2Fsrc%2Fohos%2Fhvigor.dart%3A159%3A10%29%0A%234++++++OhosHvigorBuilder.buildHap+%28package%3Aflutter_tools%2Fsrc%2Fohos%2Fhvigor.dart%3A414%3A33%29%0A%3Casynchronous+suspension%3E%0A%235++++++BuildHapCommand.runCommand+%28package%3Aflutter_tools%2Fsrc%2Fcommands%2Fbuild_hap.dart%3A86%3A5%29%0A%3Casynchronous+suspension%3E%0A%236++++++FlutterCommand.run.%3Canonymous+closure%3E+%28package%3Aflutter_tools%2Fsrc%2Frunner%2Fflutter_command.dart%3A1590%3A27%29%0A%3Casynchronous+suspension%3E%0A%237++++++AppContext.run.%3Canonymous+closure%3E+%28package%3Aflutter_tools%2Fsrc%2Fbase%2Fcontext.dart%3A154%3A19%29%0A%3Casynchronous+suspension%3E%0A%238++++++CommandRunner.runCommand+%28package%3Aargs%2Fcommand_runner.dart%3A212%3A13%29%0A%3Casynchronous+suspension%3E%0A%239++++++FlutterCommandRunner.runCommand.%3Canonymous+closure%3E+%28package%3Aflutter_tools%2Fsrc%2Frunner%2Fflutter_command_runner.dart%3A496%3A9%29%0A%3Casynchronous+suspension%3E%0A%2310+++++AppContext.run.%3Canonymous+closure%3E+%28package%3Aflutter_tools%2Fsrc%2Fbase%2Fcontext.dart%3A154%3A19%29%0A%3Casynchronous+suspension%3E%0A%2311+++++FlutterCommandRunner.runCommand+%28package%3Aflutter_tools%2Fsrc%2Frunner%2Fflutter_command_runner.dart%3A431%3A5%29%0A%3Casynchronous+suspension%3E%0A%2312+++++FlutterCommandRunner.run.%3Canonymous+closure%3E+%28package%3Aflutter_tools%2Fsrc%2Frunner%2Fflutter_command_runner.dart%3A307%3A33%29%0A%3Casynchronous+suspension%3E%0A%2313+++++run.%3Canonymous+closure%3E.%3Canonymous+closure%3E+%28package%3Aflutter_tools%2Frunner.dart%3A104%3A11%29%0A%3Casynchronous+suspension%3E%0A%2314+++++AppContext.run.%3Canonymous+closure%3E+%28package%3Aflutter_tools%2Fsrc%2Fbase%2Fcontext.dart%3A154%3A19%29%0A%60%60%60%0A%60%60%60console%0A%5B%21%5D+Flutter+%28Channel+%5Buser-branch%5D%2C+3.41.10-ohos-1.0.1%2C+on+Microsoft+Windows+%5B%E7%89%88%E6%9C%AC+10.0.26200.9457%5D%2C+locale+zh-CN%29+%5B1%2C216ms%5D%0A++++%21+Flutter+version+3.41.10-ohos-1.0.1+on+channel+%5Buser-branch%5D+at+D%3A%5Cwbc%5Cshuyo%5C.tools%5Cflutter-ohos%0A++++++Currently+on+an+unknown+channel.+Run+%60flutter+channel%60+to+switch+to+an+official+channel.%0A++++++If+that+doesn%27t+fix+the+issue%2C+reinstall+Flutter+by+following+instructions+at+https%3A%2F%2Fflutter.dev%2Fsetup.%0A++++%21+The+flutter+binary+is+not+on+your+path.+Consider+adding+D%3A%5Cwbc%5Cshuyo%5C.tools%5Cflutter-ohos%5Cbin+to+your+path.%0A++++%21+The+dart+binary+is+not+on+your+path.+Consider+adding+D%3A%5Cwbc%5Cshuyo%5C.tools%5Cflutter-ohos%5Cbin+to+your+path.%0A++++%21+Upstream+repository+unknown+source+is+not+a+standard+remote.%0A++++++Set+environment+variable+%22FLUTTER_GIT_URL%22+to+unknown+source+to+dismiss+this+error.%0A++++%E2%80%A2+Framework+revision+adaf911c35+%285+weeks+ago%29%2C+2026-08-17+17%3A01%3A32+%2B0700%0A++++%E2%80%A2+Engine+revision+42d3d75a56%0A++++%E2%80%A2+Dart+version+3.11.5%0A++++%E2%80%A2+DevTools+version+2.54.1%0A++++%E2%80%A2+Feature+flags%3A+enable-ohos%2C+enable-web%2C+enable-linux-desktop%2C+enable-macos-desktop%2C+enable-windows-desktop%2C+enable-android%2C+enable-ios%2C+cli-animations%2C+enable-native-assets%2C+omit-legacy-version-file%2C+enable-lldb-debugging%2C+enable-uiscene-migration%0A++++%E2%80%A2+If+those+were+intentional%2C+you+can+disregard+the+above+warnings%3B+however+it+is+recommended+to+use+%22git%22+directly+to+perform+update+checks+and+upgrades.%0A%0A%5B%E2%9C%93%5D+HarmonyOS+toolchain+-+develop+for+HarmonyOS+devices%0A++++%E2%80%A2+OpenHarmony+Sdk+at+D%3A%5CHuawei%5Ccommand-line-tools%2Fsdk%2C+available+api+versions+has+%5B22%3Adefault%5D%0A++++%E2%80%A2+Ohpm+version+6.0.1%0A++++%E2%80%A2+Node+version+v18.20.1%0A++++%E2%80%A2+Hvigorw+binary+at+D%3A%5CHuawei%5Ccommand-line-tools%5Cbin%5Chvigorw.bat%0A%0A%5B%E2%9C%93%5D+Windows+Version+%28Windows+11+or+higher%2C+25H2%2C+2009%29+%5B3.1s%5D%0A%0A%5B%E2%9C%97%5D+Android+toolchain+-+develop+for+Android+devices+%5B331ms%5D%0A++++%E2%9C%97+Unable+to+locate+Android+SDK.%0A++++++Install+Android+Studio+from%3A+https%3A%2F%2Fdeveloper.android.com%2Fstudio%2Findex.html%0A++++++On+first+launch+it+will+assist+you+in+installing+the+Android+SDK+components.%0A++++++%28or+visit+https%3A%2F%2Fflutter.dev%2Fto%2Fwindows-android-setup+for+detailed+instructions%29.%0A++++++If+the+Android+SDK+has+been+installed+to+a+custom+location%2C+please+use%0A++++++%60flutter+config+--android-sdk%60+to+update+to+that+location.%0A%0A%0A%5B%E2%9C%93%5D+Chrome+-+develop+for+the+web+%5B313ms%5D%0A++++%E2%80%A2+Chrome+at+C%3A%5CProgram+Files+%28x86%29%5CGoogle%5CChrome%5CApplication%5Cchrome.exe%0A%0A%5B%E2%9C%93%5D+Visual+Studio+-+develop+Windows+apps+%28Visual+Studio+Community+2026+18.7.0%29+%5B312ms%5D%0A++++%E2%80%A2+Visual+Studio+at+C%3A%5CProgram+Files%5CMicrosoft+Visual+Studio%5C18%5CCommunity%0A++++%E2%80%A2+Visual+Studio+Community+2026+version+18.7.11903.348%0A++++%E2%80%A2+Windows+10+SDK+version+10.0.26100.0%0A%0A%5B%E2%9C%93%5D+Connected+device+%283+available%29+%5B1%2C112ms%5D%0A++++%E2%80%A2+Windows+%28desktop%29+%E2%80%A2+windows+%E2%80%A2+windows-x64++++%E2%80%A2+Microsoft+Windows+%5B%E7%89%88%E6%9C%AC+10.0.26200.9457%5D%0A++++%E2%80%A2+Chrome+%28web%29++++++%E2%80%A2+chrome++%E2%80%A2+web-javascript+%E2%80%A2+Google+Chrome+153.0.8010.47%0A++++%E2%80%A2+Edge+%28web%29++++++++%E2%80%A2+edge++++%E2%80%A2+web-javascript+%E2%80%A2+Microsoft+Edge+153.0.4234.32%0A%0A%5B%21%5D+Network+resources+%5B21.5s%5D%0A++++%E2%9C%97+A+network+error+occurred+while+checking+%22https%3A%2F%2Fmaven.google.com%2F%22%3A+%E4%BF%A1%E5%8F%B7%E7%81%AF%E8%B6%85%E6%97%B6%E6%97%B6%E9%97%B4%E5%B7%B2%E5%88%B0%0A++++%E2%9C%97+A+network+error+occurred+while+checking+%22https%3A%2F%2Fgithub.com%2F%22%3A+%E8%BF%9C%E7%A8%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8B%92%E7%BB%9D%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E3%80%82%0A%0A%21+Doctor+found+issues+in+3+categories.%0A%0A%60%60%60%0A%0A%23%23+Flutter+Application+Metadata%0A%2A%2AType%2A%2A%3A+malformed%0A%2A%2AVersion%2A%2A%3A+1.0.0%2B1%0A%2A%2AMaterial%2A%2A%3A+true%0A%2A%2AAndroid+X%2A%2A%3A+false%0A%2A%2AModule%2A%2A%3A+false%0A%2A%2APlugin%2A%2A%3A+false%0A%2A%2AAndroid+package%2A%2A%3A+null%0A%2A%2AiOS+bundle+identifier%2A%2A%3A+null%0A%2A%2ACreation+channel%2A%2A%3A+null%0A%2A%2ACreation+framework+version%2A%2A%3A+null%0A%23%23%23+Plugins%0Ashared_preferences_foundation-2.5.7%0Awebview_flutter_wkwebview%0Ashared_preferences_android-2.4.23%0Awebview_flutter_android%0Apath_provider_linux-2.2.2%0Ashared_preferences_linux-2.4.1%0Apath_provider_windows-2.3.0%0Ashared_preferences_windows-2.4.1%0Ashared_preferences_web-2.4.3%0Ashared_preferences_ohos%0Awebview_flutter_ohos%0A%0A&labels=tool%2Csevere%3A+crash
+

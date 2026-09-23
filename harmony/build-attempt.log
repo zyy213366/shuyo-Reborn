@@ -1,0 +1,11 @@
+Downloading ohos-arm64-profile/windows-x64 tools...              2,369ms
+Downloading ohos-arm64-release/windows-x64 tools...              1,326ms
+Downloading ohos-x64-profile/windows-x64 tools...                1,297ms
+Downloading ohos-x64-release/windows-x64 tools...                  966ms
+Downloading ohos-arm64 tools...                                     8.7s
+Downloading ohos-arm64-profile tools...                             5.0s
+Downloading ohos-arm64-release tools...                             4.2s
+Downloading ohos-x64 tools...                                       8.4s
+Downloading ohos-x64-profile tools...                               5.2s
+Downloading ohos-x64-release tools...                               4.6s
+[!] No Hmos SDK found. Try setting the HOS_SDK_HOME environment variable.

@@ -1,0 +1,28 @@
+name: qing_schedule
+description: 只关于课表的上海大学安卓应用。
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+  webview_flutter: ^4.13.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  shared_preferences_platform_interface: ^2.4.2
+  webview_flutter_platform_interface: ^2.15.1
+flutter:
+  uses-material-design: true
+  assets:
+    - NOTICE.md
+    - assets/fonts/OFL.txt
+  fonts:
+    - family: QingSans
+      fonts:
+        - asset: assets/fonts/NotoSansSC.ttf

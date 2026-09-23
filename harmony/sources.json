@@ -1,0 +1,6 @@
+{
+  "flutter": { "url": "https://gitcode.com/CPF-Flutter/flutter_flutter.git", "branch": "3.41.10-ohos-1.0.1", "revision": "adaf911c35c9136a7d18fc424d714c9ec7724e60", "directory": "flutter-ohos" },
+  "webview": { "url": "https://gitcode.com/CPF-Flutter/flutter_packages.git", "branch": "br_webview_flutter-v4.13.0_ohos", "revision": "3f44aceb6b076a6ec58f3570435f1907411511fe", "directory": "ohos-webview", "sparse": "packages/webview_flutter" },
+  "preferences": { "url": "https://gitcode.com/CPF-Flutter/flutter_packages.git", "branch": "br_shared_preferences-v2.5.3_ohos", "revision": "860dc91d2263f58c26545c7c69e4d5cd765dfb4a", "directory": "ohos-preferences", "sparse": "packages/shared_preferences" }
+}
+

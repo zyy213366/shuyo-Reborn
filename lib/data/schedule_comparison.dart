@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'models/academic_schedule.dart';
 import 'schedule_document.dart';
 import 'schedule_calendar.dart';
@@ -149,62 +150,16 @@ class ScheduleComparison {
     ]);
   }
 
-  /// Match codes when available. A missing code may match a unique name, but
-  /// two distinct nonempty codes are never collapsed just because names match.
+  /// A shared course is the same actual class occurrence in this week.
+  /// Catalog codes alone do not identify a teaching group or a lesson.
   static List<CommonCourse> common(
     List<ScheduleDocument> documents,
-    DateTime weekStart, {
-    bool allWeeks = true,
-  }) {
+    DateTime weekStart,
+  ) {
     if (documents.length < 2) return [];
-    final entries = <CourseOccurrence>[];
-    for (final doc in documents) {
-      final week = teachingWeek(doc, weekStart);
-      if (!allWeeks) entries.addAll(occurrences(doc, weekStart));
-      for (final session in doc.schedule.sessions) {
-        if (allWeeks) {
-          final monday = mondayOf(weekStart);
-          entries.add(
-            CourseOccurrence(
-              doc,
-              session,
-              DateTime(
-                monday.year,
-                monday.month,
-                monday.day + session.weekday - 1,
-              ),
-              sessionRanges(doc, session),
-            ),
-          );
-        }
-      }
-      for (final course in doc.schedule.untimedCourses) {
-        if (allWeeks ||
-            (week >= 1 &&
-                week <= doc.schedule.maxWeek &&
-                course.occursInWeek(week))) {
-          final session = CourseSession(
-            id: course.id,
-            courseName: course.courseName,
-            courseCode: course.courseCode,
-            teacherName: course.teacherName,
-            campus: course.campus,
-            location: '',
-            weekday: 0,
-            startSection: 0,
-            endSection: 0,
-            sections: const [],
-            weeks: course.weeks,
-            weekText: course.weekText,
-            credit: course.credit,
-            note: course.summary,
-          );
-          entries.add(
-            CourseOccurrence(doc, session, mondayOf(weekStart), const []),
-          );
-        }
-      }
-    }
+    final entries = [
+      for (final doc in documents) ...occurrences(doc, weekStart),
+    ];
     String normalize(String value) =>
         value.trim().replaceAll(RegExp(r'\s+'), '').toLowerCase();
     final codesByName = <String, Set<String>>{};
@@ -220,12 +175,22 @@ class ScheduleComparison {
       var code = normalize(entry.session.displayCourseCode);
       final candidates = codesByName[name] ?? {};
       if (code.isEmpty && candidates.length == 1) code = candidates.single;
-      final key = code.isEmpty ? 'name:$name' : 'code:$code';
+      if (entry.ranges.isEmpty) continue;
+      final key = jsonEncode([
+        code.isEmpty ? 'name:$name' : 'code:$code',
+        entry.date.toIso8601String(),
+        entry.ranges.map((r) => [r.start, r.end]).toList(),
+        normalize(entry.session.teacherName),
+        normalize(entry.session.campus),
+        normalize(entry.session.location),
+      ]);
       (groups[key] ??= []).add(entry);
     }
     final result = <CommonCourse>[];
     for (final group in groups.values) {
-      if (documents.every((doc) => group.any((e) => e.document.id == doc.id))) {
+      // Shared exports intentionally use the same anonymous document ID.
+      // Each participant must contribute its own occurrence nonetheless.
+      if (documents.every((doc) => group.any((e) => identical(e.document, doc)))) {
         group.sort((a, b) {
           final byDate = a.date.compareTo(b.date);
           return byDate != 0

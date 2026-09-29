@@ -69,10 +69,7 @@ class _AcademicSchedulePageState extends State<AcademicSchedulePage> {
         documentId: widget.repository.documentId,
       );
   AcademicScheduleDisplaySettings _displaySettings =
-      const AcademicScheduleDisplaySettings(
-        colorful: false,
-        showTeacher: false,
-      );
+      const AcademicScheduleDisplaySettings(colorful: true, showTeacher: true);
   Map<String, int> _courseColorValues = const {};
   late bool _usingInitialState;
   String? _initialLoadError;
@@ -1545,6 +1542,7 @@ class _ScheduleBodyState extends State<_ScheduleBody> {
                           days *
                           weekdays.length;
                   return SingleChildScrollView(
+                    primary: true,
                     key: PageStorageKey(
                       'academic-schedule-vertical-scroll-$week',
                     ),

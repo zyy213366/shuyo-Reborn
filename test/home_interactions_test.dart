@@ -52,9 +52,22 @@ Future<ScheduleStore> launch(
       untimedCourses: [],
     ),
   );
+  // Existing interaction fixtures explicitly retain their original settings.
+  // Fresh-install defaults are covered separately by v2_regression_test.
+  await store.update(
+    doc.copyWith(
+      colorful: false,
+      showTeacher: false,
+      showOtherWeeks: false,
+      showCourseCode: false,
+      showCredit: false,
+      showControls: true,
+      courseWeekDisplay: CourseWeekDisplay.none,
+    ),
+  );
   if (settings) {
     await store.update(
-      doc.copyWith(showOtherWeeks: true, showCourseCode: true),
+      store.active.copyWith(showOtherWeeks: true, showCourseCode: true),
     );
   }
   await tester.pumpWidget(QingScheduleApp(store: store));
@@ -346,9 +359,10 @@ void main() {
       expect(store.active.id, second.id);
       await tester.tap(find.text('显示设置'));
       await tester.pumpAndSettle();
+      expect(store.active.showCourseCode, isTrue);
       await tester.tap(find.text('显示课程号'));
       await tester.pumpAndSettle();
-      expect(store.active.showCourseCode, isTrue);
+      expect(store.active.showCourseCode, isFalse);
       expect(store.byId(original).showCourseCode, isFalse);
       await tester.tap(find.text('完成'));
       await tester.pumpAndSettle();

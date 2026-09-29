@@ -147,7 +147,6 @@ void main() {
         ScheduleComparison.common(
           [doc, other],
           week,
-          allWeeks: false,
         ).single.name,
         '高等数学',
       );

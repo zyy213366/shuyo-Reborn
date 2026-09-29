@@ -349,7 +349,9 @@ void main() {
     update(() => week = 30);
     await tester.pumpAndSettle();
     expect(built, isNot(contains(15)));
-    expect(built.length, lessThanOrEqualTo(4));
+    // The two mounted source pages may rebuild before the destination's
+    // layout. Only source and destination neighbors may be constructed.
+    expect(built.every({1, 2, 29, 30, 31}.contains), isTrue, reason: '$built');
     expect(tester.takeException(), isNull);
   });
 }

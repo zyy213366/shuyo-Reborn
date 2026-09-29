@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 @immutable
 class AppearanceSettings {
   const AppearanceSettings({
-    this.themeMode = ThemeMode.system,
+    this.themeMode = ThemeMode.light,
     this.useSystemFont = true,
     this.popupOpacity = 1,
   });
@@ -35,7 +35,7 @@ class AppearanceSettings {
             : 1,
         themeMode: ThemeMode.values.firstWhere(
           (v) => v.name == json['themeMode'],
-          orElse: () => ThemeMode.system,
+          orElse: () => ThemeMode.light,
         ),
         useSystemFont: json['useSystemFont'] is bool
             ? json['useSystemFont'] as bool

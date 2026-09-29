@@ -1,7 +1,7 @@
 name: qing_schedule
 description: 只关于课表的上海大学安卓应用。
 publish_to: none
-version: 1.0.0+1
+version: 1.1.0+2
 environment:
   sdk: '>=3.10.0 <4.0.0'
 dependencies:

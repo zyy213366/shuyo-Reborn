@@ -6,13 +6,13 @@ class AcademicScheduleDisplaySettings {
   const AcademicScheduleDisplaySettings({
     required this.colorful,
     required this.showTeacher,
-    this.showOtherWeeks = false,
-    this.showCourseCode = false,
+    this.showOtherWeeks = true,
+    this.showCourseCode = true,
     this.visibleDays = 7,
     this.showGrid = true,
-    this.showControls = true,
-    this.showCredit = false,
-    this.courseWeekDisplay = CourseWeekDisplay.none,
+    this.showControls = false,
+    this.showCredit = true,
+    this.courseWeekDisplay = CourseWeekDisplay.all,
   });
 
   final bool colorful;

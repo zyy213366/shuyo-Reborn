@@ -19,7 +19,8 @@ class ComparisonWeekGrid extends StatelessWidget {
     ];
     commonIds = {
       for (final course in ScheduleComparison.common(documents, monday))
-        for (final e in course.occurrences) (e.document.id, e.session.id),
+        for (final e in course.occurrences)
+          (e.document.id, e.session.id, e.date),
     };
     final ranges = entries.expand((e) => e.ranges).toList();
     start = ranges.fold(480, (v, r) => r.start < v ? r.start : v) ~/ 60 * 60;
@@ -32,7 +33,7 @@ class ComparisonWeekGrid extends StatelessWidget {
   final double days;
   final int firstDay;
   late final List<CourseOccurrence> entries;
-  late final Set<(String, String)> commonIds;
+  late final Set<(String, String, DateTime)> commonIds;
   late final int start, end;
 
   void _details(BuildContext context, List<CourseOccurrence> courses) {
@@ -76,6 +77,7 @@ class ComparisonWeekGrid extends StatelessWidget {
         const header = 48.0;
         const scale = 1.0;
         return SingleChildScrollView(
+          primary: true,
           child: SizedBox(
             key: const ValueKey('comparison-grid'),
             height: header + (end - start) * scale,
@@ -178,6 +180,7 @@ class ComparisonWeekGrid extends StatelessWidget {
                                     commonIds.contains((
                                       e.document.id,
                                       e.session.id,
+                                      e.date,
                                     ))
                                     ? 1
                                     : .25,

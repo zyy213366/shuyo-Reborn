@@ -9,6 +9,7 @@ android/.gradle/
 .idea/
 *.jks
 *.keystore
+android/key.properties
 
 # Harmony local signing material
 *.p12

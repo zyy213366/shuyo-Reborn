@@ -32,6 +32,7 @@ class ScheduleGesturePager extends StatefulWidget {
 class _ScheduleGesturePagerState extends State<ScheduleGesturePager>
     with SingleTickerProviderStateMixin {
   late final PageController _pages;
+  final _vertical = <int, ScrollController>{};
   late final AnimationController _zoom;
   late double _days;
   double _zoomFrom = 7;
@@ -81,6 +82,7 @@ class _ScheduleGesturePagerState extends State<ScheduleGesturePager>
       _animatingPage = false;
       _targetWeek = widget.week;
       _visibleWeek = widget.week;
+      _resetVertical(widget.week);
       _pages.jumpToPage(widget.week - widget.minWeek);
     }
     if (!_interacting &&
@@ -98,6 +100,11 @@ class _ScheduleGesturePagerState extends State<ScheduleGesturePager>
   }
 
   void _start() {
+    // Prepare neighbors before they become visible; do not move the current
+    // week's content on a small drag that is cancelled.
+    for (final week in _vertical.keys) {
+      if (week != _visibleWeek) _resetVertical(week);
+    }
     _settleGeneration++;
     _gestureWeek = _animatingPage
         ? _targetWeek
@@ -172,6 +179,7 @@ class _ScheduleGesturePagerState extends State<ScheduleGesturePager>
   }
 
   Future<void> _settle(int week, {double velocity = 0}) async {
+    if (week != _visibleWeek) _resetVertical(week);
     final generation = ++_settleGeneration;
     _targetWeek = week;
     if (!_pages.hasClients) return;
@@ -196,14 +204,26 @@ class _ScheduleGesturePagerState extends State<ScheduleGesturePager>
   void _pageChanged(int page) {
     final week = page + widget.minWeek;
     if (week == _visibleWeek) return;
+    _resetVertical(week);
     _visibleWeek = week;
     widget.onWeekChanged(week);
+  }
+
+  void _resetVertical(int week) {
+    final controller = _vertical[week];
+    if (controller == null) return;
+    for (final position in controller.positions) {
+      if (position.pixels != 0) position.jumpTo(0);
+    }
   }
 
   @override
   void dispose() {
     _pageDrag?.cancel();
     _pages.dispose();
+    for (final controller in _vertical.values) {
+      controller.dispose();
+    }
     _zoom.dispose();
     super.dispose();
   }
@@ -288,11 +308,17 @@ class _ScheduleGesturePagerState extends State<ScheduleGesturePager>
               onPageChanged: _pageChanged,
               physics: const NeverScrollableScrollPhysics(),
               itemCount: widget.maxWeek - widget.minWeek + 1,
-              itemBuilder: (context, index) => widget.builder(
-                context,
-                index + widget.minWeek,
-                _days,
-                _firstDay,
+              itemBuilder: (context, index) => PrimaryScrollController(
+                controller: _vertical.putIfAbsent(
+                  index + widget.minWeek,
+                  () => ScrollController(keepScrollOffset: false),
+                ),
+                child: widget.builder(
+                  context,
+                  index + widget.minWeek,
+                  _days,
+                  _firstDay,
+                ),
               ),
             ),
           ),

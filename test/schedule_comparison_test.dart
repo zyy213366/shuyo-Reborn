@@ -35,7 +35,7 @@ void main() {
           course('x', '独有', [1], day: 2),
         ]),
         sample('B', [
-          course('b', '数学', [1], code: 'M', day: 3),
+          course('b', '数学', [1], code: 'M'),
         ]),
       ];
       Future<void> show(TimetableComparisonMode mode) => tester.pumpWidget(
@@ -69,7 +69,7 @@ void main() {
         .25,
       );
       await show(TimetableComparisonMode.commonFree);
-      for (final day in [1, 2, 3]) {
+      for (final day in [1, 2]) {
         expect(
           find.byKey(ValueKey('comparison-busy-$day-480')),
           findsOneWidget,
@@ -178,22 +178,19 @@ void main() {
       [(500, 620)],
     );
   });
-  test('common courses match identity even at different times and weeks', () {
+  test('common courses require an aligned lesson and unambiguous identity', () {
     final a = sample('A', [
       course('a', '数学', [1], code: 'MATH'),
       course('x', '同名', [1], code: 'X'),
     ]);
     final b = sample('B', [
-      course('b', '数学', [2], code: 'MATH', day: 3),
+      course('b', '数学', [1], code: 'MATH'),
       course('y', '同名', [1], code: 'Y'),
     ]);
     final common = ScheduleComparison.common([a, b], DateTime(2026, 9, 7));
     expect(common.single.name, '数学');
-    expect(common.single.occurrences.map((e) => e.session.weekday), [1, 3]);
-    expect(
-      ScheduleComparison.common([a, b], DateTime(2026, 9, 7), allWeeks: false),
-      isEmpty,
-    );
+    expect(common.single.occurrences.map((e) => e.session.weekday), [1, 1]);
+    expect(ScheduleComparison.common([a, b], DateTime(2026, 9, 14)), isEmpty);
     final missing = sample('C', [
       course('c', '数学', [1]),
     ]);
@@ -218,7 +215,16 @@ void main() {
     (tester) async {
       final store = await launch(tester);
       final original = store.active.id;
-      await store.create('朋友课表', schedule: store.active.schedule.copyWith(sessions: [...store.active.schedule.sessions, course('late','后续课程',[20])]), firstWeekStart: store.active.firstWeekStart);
+      await store.create(
+        '朋友课表',
+        schedule: store.active.schedule.copyWith(
+          sessions: [
+            ...store.active.schedule.sessions,
+            course('late', '后续课程', [20]),
+          ],
+        ),
+        firstWeekStart: store.active.firstWeekStart,
+      );
       await store.select(original);
       await tester.pumpAndSettle();
       await tester.tap(find.byTooltip('更多'));
@@ -233,7 +239,12 @@ void main() {
       await tester.tap(find.text('开始对比'));
       await tester.pumpAndSettle();
       expect(find.byKey(const ValueKey('comparison-grid')), findsWidgets);
-      expect(tester.widget<ScheduleGesturePager>(find.byType(ScheduleGesturePager)).maxWeek, 20);
+      expect(
+        tester
+            .widget<ScheduleGesturePager>(find.byType(ScheduleGesturePager))
+            .maxWeek,
+        20,
+      );
       expect(find.text('共同课程'), findsOneWidget);
       await tester.tap(find.text('共同空闲'));
       await tester.pumpAndSettle();
